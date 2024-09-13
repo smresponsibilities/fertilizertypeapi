@@ -1,9 +1,10 @@
 import pickle
-
 from flask import Flask, request
+from flask_cors import CORS
 import numpy as np
 
 app = Flask(__name__)
+CORS(app) 
 
 
 fertname_dict = {0: '10-26-26', 1: '14-35-14', 2: '17-17-17', 3: '20-20', 4: '28-28', 5: 'DAP', 6: 'Urea'}
