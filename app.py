@@ -28,7 +28,7 @@ def home():
 #   "phosphorous": 0
 # }
 
-@app.route('/fertilizername', methods=['GET'])
+@app.route('/fertilizername', methods=['POST'])
 def get_fertilizer():
     try:
         numbers1 = request.json
@@ -63,4 +63,4 @@ def get_fertilizer():
         }
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=8080)
+    app.run(debug=True)
