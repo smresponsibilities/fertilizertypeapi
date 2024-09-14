@@ -14,7 +14,7 @@ https://fertilizertypebysm.onrender.com
 
 ### 1. Home Endpoint
 
-#### https://fertilizertypebysm.onrender.com
+#### https://fertilizertypebysm.onrender.com/
 
 ```
 GET /
@@ -35,7 +35,7 @@ This endpoint returns a welcome message indicating that the API is running.
 
 ### 2. Fertilizer Recommendation Endpoint
 
-#### https://fertilizertypebysm.onrender.com
+#### https://fertilizertypebysm.onrender.com/fertilizername
 
 ```
 POST /fertilizername
