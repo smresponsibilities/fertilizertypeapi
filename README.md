@@ -2,19 +2,19 @@
 
 ## Overview
 
-The Fertilizer Recommendation API provides a way to predict the appropriate fertilizer based on various input parameters such as temperature, humidity, moisture, soil type, crop type, nitrogen, potassium, and phosphorous levels.
+The Fertilizer Recommendation API provides a way to predict the appropriate fertilizer based on input parameters such as temperature, humidity, moisture, soil type, crop type, nitrogen, potassium, and phosphorous levels.
 
 ## Base URL
 
 ```
-http://<your-domain>
+https://fertilizertypebysm.onrender.com
 ```
 
 ## Endpoints
 
 ### 1. Home Endpoint
 
-#### URL
+#### https://fertilizertypebysm.onrender.com
 
 ```
 GET /
@@ -35,7 +35,7 @@ This endpoint returns a welcome message indicating that the API is running.
 
 ### 2. Fertilizer Recommendation Endpoint
 
-#### URL
+#### https://fertilizertypebysm.onrender.com
 
 ```
 POST /fertilizername
@@ -59,9 +59,9 @@ This endpoint accepts a JSON payload with various input parameters and returns t
     "moisture": float,
     "soilType": int,
     "cropType": int,
-    "nitrogen": float,
-    "potassium": float,
-    "phosphorous": float
+    "nitrogen": int,
+    "potassium": int,
+    "phosphorous": int
   }
   ```
 
@@ -99,7 +99,7 @@ This endpoint accepts a JSON payload with various input parameters and returns t
 ### Request
 
 ```sh
-curl -X POST http://<your-domain>/fertilizername \
+curl -X POST https://fertilizertypebysm.onrender.com/fertilizername \
      -H "Content-Type: application/json" \
      -d '{
            "temperature": 25.0,
@@ -107,9 +107,9 @@ curl -X POST http://<your-domain>/fertilizername \
            "moisture": 30.0,
            "soilType": 1,
            "cropType": 2,
-           "nitrogen": 10.0,
-           "potassium": 5.0,
-           "phosphorous": 3.0
+           "nitrogen": 10,
+           "potassium": 5,
+           "phosphorous": 3
          }'
 ```
 
@@ -117,7 +117,7 @@ curl -X POST http://<your-domain>/fertilizername \
 
 ```json
 {
-  "Fertilizername": "14-35-14"
+  "Fertilizername": "20-20"
 }
 ```
 
@@ -167,5 +167,5 @@ To run the application locally, execute the following command:
 python app.py
 ```
 
-The application will be available at `http://127.0.0.1:5000`.
+The application will be available at [https://fertilizertypebysm.onrender.com].
 
