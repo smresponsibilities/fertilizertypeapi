@@ -8,7 +8,8 @@
 
 A production-grade machine learning microservice that predicts optimal agricultural fertilizer formulations (e.g., Urea, DAP, 14-35-14, 28-28, 20-20) using an **XGBoost gradient boosting pipeline** trained on soil chemistry (Nitrogen, Phosphorous, Potassium), soil moisture, and atmospheric conditions.
 
-Live Project: [Fertilizer Recommendation API on Shivam Mahajan Portfolio](https://shivammahajan.com/projects/)
+Live App / Demo: [https://fertilizertypebysm.onrender.com/](https://fertilizertypebysm.onrender.com/)  
+Portfolio Architecture: [https://shivammahajan.com/projects/](https://shivammahajan.com/projects/)
 
 ---
 
